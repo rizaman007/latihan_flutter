@@ -1,0 +1,15 @@
+Nama Database: dbmarket
+
+Tabel Customer:
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_code VARCHAR(20) UNIQUE,
+    customer_name VARCHAR(100) NOT NULL,
+    customer_address TEXT,
+    customer_zipcode VARCHAR(10),
+    customer_dob DATE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE,
+    phone_number VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
